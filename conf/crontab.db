@@ -1,0 +1,1 @@
+{"name":"es opt","command":"curator --config /opt/curator/conf/config.yaml /opt/curator/conf/daily_actions.yaml","schedule":"@daily","timestamp":"Mon Jul 17 2017 10:17:27 GMT+0000 (UTC)","logging":"true","mailing":{},"_id":"xCXvAbQoCXjC2Ct4"}

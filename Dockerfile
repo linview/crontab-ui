@@ -7,3 +7,4 @@ RUN apk --no-cache add python && \
     pip install -U elasticsearch-curator==4.2.0
 
 ADD conf /opt/curator/conf
+ADD conf/crontab.db /usr/lib/node_modules/crontab-ui/crontabs/crontab.db
