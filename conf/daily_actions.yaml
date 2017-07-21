@@ -41,7 +41,7 @@ actions:
       direction: older
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: ${RETENTION_DAYS:3}
+      unit_count: ${FORCEMERGE_DAYS:1}
       field:
       stats_result:
       epoch:
