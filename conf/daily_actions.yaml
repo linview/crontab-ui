@@ -22,27 +22,3 @@ actions:
       stats_result:
       epoch:
       exclude: False
-  2:
-    action: forcemerge
-    description: "Perform a forceMerge on selected indices to 'max_num_segments' per shard"
-    options:
-      max_num_segments: 2
-      delay: 120
-      timeout_override:
-      continue_if_exception: False
-      disable_action: False
-    filters:
-    - filtertype: pattern
-      kind: prefix
-      value: logs-
-      exclude: False
-    - filtertype: age
-      source: creation_date
-      direction: older
-      timestring: '%Y.%m.%d'
-      unit: days
-      unit_count: ${FORCEMERGE_DAYS:1}
-      field:
-      stats_result:
-      epoch:
-      exclude: False
